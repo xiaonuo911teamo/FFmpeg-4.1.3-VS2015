@@ -1,0 +1,1 @@
+int qz_isPause = 0;

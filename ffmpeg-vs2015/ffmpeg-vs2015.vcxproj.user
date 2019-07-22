@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>-thread_queue_size 64 -f gdigrab -i desktop -thread_queue_size 160 -f dshow -i audio="virtual-audio-capturer" -vcodec libx264 -acodec libmp3lame -r 20 -pix_fmt yuv420p -preset:v ultrafast -tune:v zerolatency -f tee -map 0:v -map 1:a "[f=rtsp]rtsp://192.168.1.14/live1.sdp"</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+</Project>
